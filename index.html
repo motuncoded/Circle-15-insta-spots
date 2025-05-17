@@ -1,38 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Insta spots</title>
-</head>
-<body>
-  <header class="site-header">
+  </head>
+  <body>
+    <header class="site-header">
       <h1 class="logo">✢ SPOTS</h1>
     </header>
-    <div class="hero">
-        <div class="hero__left">
-        <img src="/assest/Avatar.png" alt="A profile image" class="hero__img">
+    <main class="hero">
+      <div class="hero__left">
+        <img src="/assets/Avatar.png" alt="A profile image" class="hero__img" />
         <div class="hero__profile">
-          
-            <section class="hero__profile--top">
-            <h1 class="hero__name" contenteditable="" >Bessie Coleman</h1>
-            <p class="hero__bio" contenteditable="" >Civil Aviator</p>
-            </section>
-            <button class="hero__edit">
-                <img src="/assest/Group 2.svg" alt="">
-                Edit Profile
-            </button>
+          <section class="hero__profile--top">
+            <h2 class="hero__name" contenteditable="">Bessie Coleman</h2>
+            <h3 class="hero__bio" contenteditable="">Civil Aviator</h3>
+          </section>
+          <button class="hero__edit">
+            <img src="/assets/Group 2.svg" alt="" />
+            Edit Profile
+          </button>
         </div>
+      </div>
+      <button class="hero__new">
+        <img src="/assets/Group 26.svg" alt="" />
+        New Post
+      </button>
+    </main>
+    <hr class="hz__line" />
+    <section class="cards">
+      <div class="card">
+        <img src="/assets/Val Thorens.svg" alt="card-img" />
+        <div class="card__content">
+          <h4>Val Thorens</h4>
+          <img src="/assets/like-icon.svg" alt="" />
         </div>
-        <button class="hero__new">
-            <img src="/assest/Group 26.svg" alt="">
-            New Post
-        </button>
-    </div>
-    <div class="hz__line"></div>
-</body>
-
-  
+      </div>
+      <div class="card">
+        <img src="/assets/Restaurant terrace.svg" alt="card-img" />
+        <div class="card__content">
+          <h4>Restaurant terrace</h4>
+          <img src="/assets/like-icon.svg" alt="" />
+        </div>
+      </div>
+      <div class="card">
+        <img src="/assets/An outdoor cafe.svg" alt="card-img" />
+        <div class="card__content">
+          <h4>An outdoor cafe</h4>
+          <img src="/assets/like-icon.svg" alt="" />
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
