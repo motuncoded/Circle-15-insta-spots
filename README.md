@@ -27,7 +27,7 @@ A visually clean, Figma-inspired profile and photo grid layout built with only H
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/insta-spots.git
+git clone https://github.com/motuncoded/Circle-15-insta-spots.git
 ```
 
 ### 2. Open `index.html`
@@ -82,14 +82,17 @@ This layout is a recreation of a provided Figma design for learning purposes onl
 
 ## ✅ Live Demo (Optional)
 
-You can [view it live here](https://your-username.github.io/insta-spots/) *(update link after deployment)*.
+You can [view it live here](https://circle-15-insta-spots.vercel.app/) *(update link after deployment)*.
 
 ---
 
-## 🧑‍💻 Author
+## 🧑‍💻 Contributors
 
-**Your Name**  
-[GitHub](https://github.com/your-username)
+Motunrayo Adeneye- https://github.com/motuncoded
+Chukwuma Jennifer- https://github.com/jhenniifer
+Evelyn Omoghene Aleburu- https://github.com/evychris1
+Merveille Naomi- https://github.com/merve322
+
 
 ---
 
