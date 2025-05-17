@@ -22,6 +22,7 @@ body {
   font-weight: bold;
   color: #000;
 }
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -32,6 +33,10 @@ body {
 .hero__left {
   display: flex;
   gap: 1rem;
+}
+
+.hero__img {
+  border-radius: 8px;
 }
 
 .hero__name {
@@ -88,18 +93,106 @@ body {
   width: 100%;
   height: 313px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 .card__content {
   display: flex;
   justify-content: space-between;
 }
-footer{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
- /* // border-top: 1px solid #212121B2; */
-  
+
+footer {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 2.5rem;
+}
+
+/* MOBILE VIEW  */
+
+@media (max-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__name {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .hero__img {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .hero__profile {
+    width: 280px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero__edit {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .hero__new {
+    width: 280px;
+  }
+
+  .hero__bio {
+    font-size: 16px;
+  }
+
+  .hz__line {
+    width: 95%;
+    height: 1px;
+    background-color: #21212166;
+    max-width: calc(1280px - 2rem);
+    margin: 1rem auto;
+  }
+
+  .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  footer {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* TABLET VIEW  */
+@media (max-width: 1024px) {
+  .cards,
+  .hero {
+    padding: 0px 10px;
+  }
+
+  .hz__line {
+    width: 95%;
+    height: 1px;
+    background-color: #21212166;
+    max-width: calc(1280px - 2rem);
+    margin: 1rem auto;
+  }
 }
