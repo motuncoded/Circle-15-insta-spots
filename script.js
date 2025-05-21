@@ -4,7 +4,7 @@ import { cardDetails } from "./data.js";
 const cardsArray =
   JSON.parse(localStorage.getItem("cardDetails")) || cardDetails;
 
-const cardsContainer = document.querySelector(".cards");
+const cardsContainer = documlgit ent.querySelector(".cards");
 
 // Update the like status and icon
 const updateLikeStatus = (e, name) => {
@@ -51,5 +51,5 @@ const renderCards = () => {
   cardsArray.forEach(renderCard);
 };
 
-// Initial render
+// Initial render2
 renderCards();
