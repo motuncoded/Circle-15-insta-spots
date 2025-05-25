@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- meta data -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="A simple Instagram-like profile page" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Instagram, Profile" />
+    <meta name="author" content="Circle 15" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="style.css" />
     <title>Insta spots</title>
   </head>
   <body>
-    <div class="main-container">
+    <div class="main-container" aria-label="Main Container">
       <header class="site-header">
-        <h1 class="logo">✢ SPOTS</h1>
+        <h1 class="logo" aria-label="Site Logo">✢ SPOTS</h1>
       </header>
-      <main class="hero">
-        <div class="hero__left">
+      <main class="hero" aria-label="Hero Section">
+        <div class="hero__left" aria-label="Hero Left Section">
           <img
             src="./assets/Avatar.png"
-            alt="A profile image"
+            alt="Profile picture of person"
             class="hero__img"
           />
-          <div class="hero__profile">
-            <section class="hero__profile--top">
-              <h2 class="hero__name" contenteditable="">Bessie Coleman</h2>
-              <h3 class="hero__bio" contenteditable="">Civil Aviator</h3>
+          <div class="hero__profile" aria-label="Hero Profile Section">
+            <section class="hero__profile--top" >
+              <h2 class="hero__name" >Bessie Coleman</h2>
+              <h3 class="hero__bio" >Civil Aviator</h3>
             </section>
-            <button class="hero__edit">
-              <img src="./assets/Group 2.svg" alt="" />
+            <button type="button" class="hero__edit" aria-label="Edit Profile Button">
+              <img src="./assets/Group 2.svg" alt="Edit Profile Icon" />
               Edit Profile
             </button>
           </div>
         </div>
-        <button class="hero__new">
-          <img src="./assets/Group 26.svg" alt="" />
+        <button type="button" class="new_post" aria-label="New Post Button" >
+          <img src="./assets/Group 26.svg" alt="New Post Icon" />
           New Post
         </button>
       </main>
       <hr class="hz__line" />
-      <section class="cards"></section>
+      <section class="cards" aria-label="Cards Section"></section>
 
       <hr class="hz__line" />
-      <footer>
+      <footer aria-label="Site Footer">
         <p>2024 © Spots</p>
       </footer>
     </div>
