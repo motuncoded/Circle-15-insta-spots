@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="edit-profile-modal.js" defer></script>
     <title>Insta spots</title>
   </head>
   <body>
@@ -20,11 +21,11 @@
           />
           <div class="hero__profile">
             <section class="hero__profile--top">
-              <h2 class="hero__name" contenteditable="">Bessie Coleman</h2>
-              <h3 class="hero__bio" contenteditable="">Civil Aviator</h3>
+              <h2 class="hero__name">Bessie Coleman</h2>
+              <h3 class="hero__bio">Civil Aviator</h3>
             </section>
-            <button class="hero__edit">
-              <img src="./assets/Group 2.svg" alt="" />
+            <button class="hero__edit" id="editProfileBtn">
+              <img src="/assets/Group 2.svg" alt="" />
               Edit Profile
             </button>
           </div>
@@ -33,9 +34,54 @@
           <img src="./assets/Group 26.svg" alt="" />
           New Post
         </button>
+
       </main>
+
       <hr class="hz__line" />
-      <section class="cards"></section>
+      <section class="cards">
+        <div class="card">
+          <img src="/assets/Val Thorens.svg" alt="card-img" />
+          <div class="card__content">
+            <h4>Val Thorens</h4>
+            <img src="/assets/like-icon.svg" alt="" />
+          </div>
+        </div>
+        <div class="card">
+          <img src="/assets/Restaurant terrace.svg" alt="card-img" />
+          <div class="card__content">
+            <h4>Restaurant terrace</h4>
+            <img src="/assets/like-icon.svg" alt="" />
+          </div>
+        </div>
+        <div class="card">
+          <img src="/assets/An outdoor cafe.svg" alt="card-img" />
+          <div class="card__content">
+            <h4>An outdoor cafe</h4>
+            <img src="/assets/like-icon.svg" alt="" />
+          </div>
+        </div>
+        <div class="card">
+          <img src="/assets/Mask group (3).png" alt="card-img" />
+          <div class="card__content">
+            <h4>A very long bridge, over the forest...</h4>
+            <img src="/assets/like-icon.svg" alt="" />
+          </div>
+        </div>
+        <div class="card">
+          <img src="/assets/Mask group (4).png" alt="card-img" />
+          <div class="card__content">
+            <h4>Tunnel with morning light</h4>
+            <img src="/assets/like-icon.svg" alt="" />
+          </div>
+        </div>
+        <div class="card">
+          <img src="/assets/Mask group (6).png" alt="card-img" />
+          <div class="card__content">
+            <h4>Mountain house</h4>
+            <img src="/assets/like-icon.svg" alt="" />
+          </div>
+        </div>
+      </section>
 
       <hr class="hz__line" />
       <footer>
