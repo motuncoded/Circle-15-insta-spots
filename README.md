@@ -1,4 +1,3 @@
-
 # ✢ Insta Spots
 
 A visually clean, Figma-inspired profile and photo grid layout built with only HTML and CSS. This project showcases a simple user profile with editable name and bio, as well as a responsive photo gallery with like buttons — all designed to match a given Figma prototype.
@@ -82,7 +81,7 @@ This layout is a recreation of a provided Figma design for learning purposes onl
 
 ## ✅ Live Demo (Optional)
 
-You can [view it live here](https://circle-15-insta-spots.vercel.app/) *(update link after deployment)*.
+You can [view it live here](https://circle-15-insta-spots.vercel.app/) _(update link after deployment)_.
 
 ---
 
@@ -92,7 +91,6 @@ Motunrayo Adeneye- https://github.com/motuncoded
 Chukwuma Jennifer- https://github.com/jhenniifer
 Evelyn Omoghene Aleburu- https://github.com/evychris1
 Merveille Naomi- https://github.com/merve322
-
 
 ---
 

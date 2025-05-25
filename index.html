@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- meta data -->
@@ -10,7 +10,6 @@
     <meta name="author" content="Circle 15" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="style.css" />
-    <script src="edit-profile-modal.js" defer></script>
     <title>Insta spots</title>
   </head>
   <body>
@@ -24,33 +23,157 @@
             src="./assets/Avatar.png"
             alt="Profile picture of person"
             class="hero__img"
+            id="currentProfileImg"
           />
           <div class="hero__profile" aria-label="Hero Profile Section">
-            <section class="hero__profile--top" >
-              <h2 class="hero__name" >Bessie Coleman</h2>
-              <h3 class="hero__bio" >Civil Aviator</h3>
+            <section class="hero__profile--top">
+              <h2 class="hero__name" id="currentName">Bessie Coleman</h2>
+              <h3 class="hero__bio" id="currentBio">Civil Aviator</h3>
             </section>
-            <button type="button" class="hero__edit" aria-label="Edit Profile Button">
+            <button
+              class="hero__edit"
+              id="editProfileBtn"
+              aria-label="Edit Profile Button"
+            >
               <img src="./assets/Group 2.svg" alt="Edit Profile Icon" />
               Edit Profile
             </button>
           </div>
         </div>
-        <button type="button" class="new_post" aria-label="New Post Button" >
+        <button class="new_post" aria-label="New Post Button">
           <img src="./assets/Group 26.svg" alt="New Post Icon" />
           New Post
         </button>
-
       </main>
-
       <hr class="hz__line" />
       <section class="cards" aria-label="Cards Section"></section>
-
       <hr class="hz__line" />
       <footer aria-label="Site Footer">
         <p>2024 © Spots</p>
       </footer>
     </div>
-    <script type="module" src="script.js"></script>
+
+    <!-- Edit Profile Modal -->
+    <section
+      class="modal-overlay"
+      id="editModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="createPostTitle"
+      aria-describedby="createPostDesc"
+      tabindex="-1"
+    >
+      <div class="modal-content">
+        <button
+          class="modal-close"
+          id="closeModal"
+          aria-label="Close Create Post Modal"
+          type="button"
+        >
+          &times;
+        </button>
+        <h4 class="modal-title">Edit Profile</h4>
+        <form id="editForm">
+          <div class="form-group">
+            <label for="nameInput">Name</label>
+            <input type="text" class="form-control" id="nameInput" required />
+          </div>
+          <div class="form-group">
+            <label for="bioInput">Bio</label>
+            <textarea class="form-control" id="bioInput" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="imageInput">Profile Picture</label>
+            <input
+              type="file"
+              class="form-control"
+              id="imageInput"
+              accept="image/*"
+              aria-required="true"
+            />
+          </div>
+          <div class="image-preview-container">
+            <img
+              id="imagePreview"
+              class="image-preview"
+              alt="Profile preview"
+            />
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn btn-secondary" id="cancelEdit">
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- create post Modal -->
+    <section
+      class="modal-overlay"
+      id="createPostModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="createPostTitle"
+      aria-describedby="createPostDesc"
+      tabindex="-1"
+    >
+      <div class="modal-content">
+        <button
+          class="modal-close"
+          id="closeCreatePostModal"
+          aria-label="Close Create Post Modal"
+          type="button"
+        >
+          &times;
+        </button>
+        <h4 class="modal-title" id="createPostTitle">Create Post</h4>
+        <p id="createPostDesc" class="sr-only">
+          Fill out the form to create a new post with an image and description.
+        </p>
+        <form id="createPostForm">
+          <div class="form-group">
+            <label for="postImageInput">Image</label>
+            <input
+              type="file"
+              class="form-control"
+              id="postImageInput"
+              name="postImageInput"
+              accept="image/*"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="form-group">
+            <label for="postDescriptionInput">Description</label>
+            <textarea
+              class="form-control"
+              id="postDescriptionInput"
+              name="postDescriptionInput"
+              rows="3"
+              required
+              aria-required="true"
+              minlength="3"
+            ></textarea>
+          </div>
+          <div class="form-actions">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              id="cancelCreatePost"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-primary">Create Post</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- javascript file -->
+    <script type="module" src="display-card.js" defer></script>
+    <script src="edit-profile-modal.js" defer></script>
+    <script src="create-post.js" defer></script>
   </body>
 </html>
