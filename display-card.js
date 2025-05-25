@@ -1,3 +1,5 @@
+// Description: This script manages a collection of cards, allowing users to like or unlike them.
+
 import { cardDetails } from "./data.js";
 
 // Retrieve card details from local storage or fallback to default
@@ -26,14 +28,12 @@ const renderCard = (card) => {
   const cardWrapper = document.createElement("div");
   cardWrapper.classList.add("card");
 
-  const heartIcon = card.liked ? "PhHeartFill" : "PhHeartLight"; // Determine heart icon
-
   cardWrapper.innerHTML = `
     <div class="card">
         <img src="${card.imgSrc}" alt="${card.name}" />
         <div class="card__content">
             <h4>${card.name}</h4>
-            <img class="like-icon" id="${card.name}" src="./assets/${heartIcon}.svg" alt="like-icon" />
+            <img class="like-icon" id="${card.name}" src="./assets/${card.liked ? "PhHeartFill" : "PhHeartLight"}.svg" alt="like-icon" />
         </div>
     </div>
   `;
